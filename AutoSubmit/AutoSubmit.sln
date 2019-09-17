@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoSubmit", "AutoSubmit\AutoSubmit.csproj", "{0F58C40E-880C-4E19-A36D-DEE00281A423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDCSubmit.Business", "BDCSubmit.Business\BDCSubmit.Business.csproj", "{9993F59D-8390-46F7-9440-1ECD277EAAEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F58C40E-880C-4E19-A36D-DEE00281A423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F58C40E-880C-4E19-A36D-DEE00281A423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F58C40E-880C-4E19-A36D-DEE00281A423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F58C40E-880C-4E19-A36D-DEE00281A423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9993F59D-8390-46F7-9440-1ECD277EAAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9993F59D-8390-46F7-9440-1ECD277EAAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9993F59D-8390-46F7-9440-1ECD277EAAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9993F59D-8390-46F7-9440-1ECD277EAAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA249D6E-7710-4A9C-BCD2-4BA00917D9E6}
+	EndGlobalSection
+EndGlobal

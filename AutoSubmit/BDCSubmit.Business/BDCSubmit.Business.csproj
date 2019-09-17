@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9993F59D-8390-46F7-9440-1ECD277EAAEF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BDCSubmit.Business</RootNamespace>
+    <AssemblyName>BDCSubmit.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="bdc-rsa">
+      <HintPath>..\..\..\MyGit\BDCSubmit\AutoSubmit\lib\bdc-rsa.dll</HintPath>
+    </Reference>
+    <Reference Include="NPoco, Version=4.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPoco.4.0.2\lib\net45\NPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MyGit\BDCSubmit\AutoSubmit\lib\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.3.1\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=3.0.7.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Quartz.3.0.7\lib\net452\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Common\HeadHandler.cs" />
+    <Compile Include="BLL\QX\CheckDataHandler.cs" />
+    <Compile Include="BLL\QX\DataExchangeHandler.cs" />
+    <Compile Include="BLL\QX\DataSubmitHandler.cs" />
+    <Compile Include="BLL\SJ\BIZMSGIDMANAGERHandler.cs" />
+    <Compile Include="BLL\SJ\ResponseHandler.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CommonClass\CheckBusinessTables.cs" />
+    <Compile Include="CommonClass\City.cs" />
+    <Compile Include="CommonClass\JobClass.cs" />
+    <Compile Include="CommonClass\PublicUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubmitModel\ACCESSLOG.cs" />
+    <Compile Include="SubmitModel\BIZANDREP.cs" />
+    <Compile Include="SubmitModel\BIZMSGIDMANAGER.cs" />
+    <Compile Include="SubmitModel\DJF_DJ_FZ.cs" />
+    <Compile Include="SubmitModel\DJF_DJ_GD.cs" />
+    <Compile Include="SubmitModel\DJF_DJ_SF.cs" />
+    <Compile Include="SubmitModel\DJF_DJ_SH.cs" />
+    <Compile Include="SubmitModel\DJF_DJ_SJ.cs" />
+    <Compile Include="SubmitModel\DJF_DJ_SQR.cs" />
+    <Compile Include="SubmitModel\DJF_DJ_SZ.cs" />
+    <Compile Include="SubmitModel\DJT_DJ_SLSQ.cs" />
+    <Compile Include="SubmitModel\FJ_F_100.cs" />
+    <Compile Include="SubmitModel\Head.cs" />
+    <Compile Include="SubmitModel\IEntity.cs" />
+    <Compile Include="SubmitModel\KTF_ZDBHQK.cs" />
+    <Compile Include="SubmitModel\KTF_ZHBHQK.cs" />
+    <Compile Include="SubmitModel\KTF_ZH_YHYDZB.cs" />
+    <Compile Include="SubmitModel\KTF_ZH_YHZK.cs" />
+    <Compile Include="SubmitModel\KTT_FW_C.cs" />
+    <Compile Include="SubmitModel\KTT_FW_H.cs" />
+    <Compile Include="SubmitModel\KTT_FW_LJZ.cs" />
+    <Compile Include="SubmitModel\KTT_FW_ZRZ.cs" />
+    <Compile Include="SubmitModel\KTT_GY_JZD.cs" />
+    <Compile Include="SubmitModel\KTT_GY_JZX.cs" />
+    <Compile Include="SubmitModel\KTT_GZW.cs" />
+    <Compile Include="SubmitModel\KTT_ZDJBXX.cs" />
+    <Compile Include="SubmitModel\KTT_ZHJBXX.cs" />
+    <Compile Include="SubmitModel\QLF_FW_FDCQ_DZ_XM.cs" />
+    <Compile Include="SubmitModel\QLF_FW_FDCQ_QFSYQ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_CFDJ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_DYAQ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_DYIQ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_HYSYQ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_JSYDSYQ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_NYDSYQ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_TDSYQ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_YGDJ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_YYDJ.cs" />
+    <Compile Include="SubmitModel\QLF_QL_ZXDJ.cs" />
+    <Compile Include="SubmitModel\QLT_FW_FDCQ_DZ.cs" />
+    <Compile Include="SubmitModel\QLT_FW_FDCQ_YZ.cs" />
+    <Compile Include="SubmitModel\QLT_QL_GJZWSYQ.cs" />
+    <Compile Include="SubmitModel\RNANDCN.cs" />
+    <Compile Include="SubmitModel\test.cs" />
+    <Compile Include="SubmitModel\ZD_K_103.cs" />
+    <Compile Include="SubmitModel\ZH_K_105.cs" />
+    <Compile Include="SubmitModel\ZTT_GY_QLR.cs" />
+    <Compile Include="SystemHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CheckBusinessTables.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CheckTableColumns.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
