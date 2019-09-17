@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CheckTableColumns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--表名、别名、是否必选-->
+  <Table TableName="" TableAliasName="" IsMust="">
+    <!--列名、别名、列数据类型、值在表内是否惟一、是否可为空、是否检查字典值、字典代码、字典类型-->
+    <Column ColumnName="BSM" ColumnAliasName="标识码" ColumnType="NUMBER" IsOnly="true" IsNotNull="true" IsCheckDictionary="false" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="YSDM" ColumnAliasName="要素代码" ColumnType="VARCHAR2"  IsOnly="false" IsNotNull="true" IsCheckDictionary="false" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="ZDDM" ColumnAliasName="" ColumnType="VARCHAR2" IsOnly="false" IsNotNull="true" IsCheckDictionary="false" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="BDCDYH" ColumnAliasName="" ColumnType="VARCHAR2" IsOnly="" IsNotNull="true" IsCheckDictionary="false" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="ZDTZM" ColumnAliasName="" ColumnType="VARCHAR2" IsOnly="" IsNotNull="true" IsCheckDictionary="true" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="ZL" ColumnAliasName="" ColumnType="VARCHAR2" IsOnly="" IsNotNull="true" IsCheckDictionary="false" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="ZDMJ" ColumnAliasName="" ColumnType="NUMBER" IsOnly="" IsNotNull="true" IsCheckDictionary="false" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="MJDW" ColumnAliasName="" ColumnType="VARCHAR2" IsOnly="" IsNotNull="true" IsCheckDictionary="true" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+    <Column ColumnName="" ColumnAliasName="" ColumnType="" IsOnly="" IsNotNull="" IsCheckDictionary="" DictionaryCodeNo="" DictionaryType=""/>
+  </Table>
+
+</CheckTableColumns>

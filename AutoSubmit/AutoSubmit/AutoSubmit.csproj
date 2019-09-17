@@ -149,6 +149,7 @@
     <Content Include="lib\Common.Logging.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="lib\CSkin.dll" />
     <Content Include="lib\Oracle.DataAccess.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

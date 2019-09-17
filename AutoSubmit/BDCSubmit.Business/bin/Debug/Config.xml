@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SystemConfig>
+  <!--基本设置-->
+  <GeneralConfig>
+    <!--市局上报报文前置机配置-->
+    <SJSubmitMachineConfig CityName="德州市" CityCode="371400">
+      <!--配置程序界面‘前置机地址’内容，德州市局，不需修改-->
+      <ComputerIp>10.17.1.193</ComputerIp>
+      <!--配置程序界面‘前置机端口号’内容，德州市局，不需修改-->
+      <UserPort>22</UserPort>
+      <!--配置程序界面‘前置机用户名’内容，德州市局，不需修改-->
+      <UserName>root</UserName>
+      <!--配置程序界面‘前置机密码’内容，德州市局，不需修改-->
+      <UserPassword>admin123</UserPassword>
+      <!--配置程序界面‘上报路径’内容，部里从德州抽取上报报文的惟一路径，禁止修改-->
+      <UploadPath>/biz/371400/BizMsg</UploadPath>
+      <!--部里向德州返回响应报文的惟一路径，禁止修改-->
+      <RepMsgPath>/biz/371400/RepMsg</RepMsgPath>
+    </SJSubmitMachineConfig>
+    <Citys>
+      <!--区县在市局机器报文配置-->
+      <!--区县名称、区县代码、上报报文生成路径、响应报文存放路径(设成GetRepMsg)、前置机上报报文存放路径、前置机响应报文存放路径-->
+      <City CityName="庆云县" CityCode="371423" BizMsgPath="H:/dzxml/371423/BizMsg" RepMsgPath="H:/dzxml/371423/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371423/BizMsg" LinuxRepMsgPath="/biz/371423/RepMsg" />
+      <City CityName="齐河县" CityCode="371425" BizMsgPath="H:/dzxml/371425/BizMsg" RepMsgPath="H:/dzxml/371425/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371425/BizMsg" LinuxRepMsgPath="/biz/371425/RepMsg" />
+      <City CityName="平原县" CityCode="371426" BizMsgPath="H:/dzxml/371426/BizMsg" RepMsgPath="H:/dzxml/371426/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371426/BizMsg" LinuxRepMsgPath="/biz/371426/RepMsg" />
+      <City CityName="夏津县" CityCode="371427" BizMsgPath="H:/dzxml/371427/BizMsg" RepMsgPath="H:/dzxml/371427/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371427/BizMsg" LinuxRepMsgPath="/biz/371427/RepMsg" />
+    </Citys>
+    <!--自动执行的时间间隔，单位：分钟。只允许填写整数数字，最小填1，最大35000-->
+    <Interval>60</Interval>
+    <LogInterval>0 0 20 * * ?</LogInterval>
+  </GeneralConfig>
+  <!--连接设置-->
+  <ConnectionConfig>
+    <!--sqlserver: Data Source = IBM-PC\TH;Initial Catalog = cqcj;User Id = sa;Password = 123;-->
+    <!--市局estate库连接配置-->
+    <SJEstateMachineConfig>
+      <ComputerIP>10.17.1.195</ComputerIP>
+      <SID>orcl</SID>
+      <UserName>estate</UserName>
+      <UserPassword>estate</UserPassword>
+    </SJEstateMachineConfig>
+    <!--市局数据交换机器连接配置-->
+    <SJCommunicationMachineConfig CityName="德州市" CityCode="371400">
+      <!--服务器名-->
+      <DataSource>10.17.1.195</DataSource>
+      <!--数据库名-->
+      <Catalog>orcl</Catalog>
+      <!--用户名-->
+      <UserName>submit</UserName>
+      <!--用户密码-->
+      <UserPassword>submit</UserPassword>
+    </SJCommunicationMachineConfig>
+    <Citys>
+      <!--区县数据交换机器连接配置-->
+      <!--区县名称、区县代码、服务器名、数据库名、用户名、用户密码-->
+      <City CityName="庆云县" CityCode="371423" DataSource="10.17.11.224" Catalog="orcl" UserName="SUBMIT" UserPassword="SUBMIT" />
+      <City CityName="齐河县" CityCode="371425" DataSource="10.17.8.6" Catalog="orcl" UserName="SUBMIT" UserPassword="SUBMIT" />
+      <City CityName="平原县" CityCode="371426" DataSource="10.17.5.48" Catalog="orcl" UserName="SUBMIT" UserPassword="SUBMIT" />
+      <City CityName="夏津县" CityCode="371427" DataSource="10.17.6.16" Catalog="orcl" UserName="SUBMIT" UserPassword="SUBMIT" />
+    </Citys>
+  </ConnectionConfig>
+  <SystemDictionary>
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="A" DictionaryName="集体土地所有权宗地" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="B" DictionaryName="建设用地使用权宗地(地表)" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="S" DictionaryName="建设用地使用权宗地(地上)" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="X" DictionaryName="建设用地使用权宗地(地下)" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="C" DictionaryName="宅基地使用权宗地" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="D" DictionaryName="土地承包经营权宗地(耕地)" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="E" DictionaryName="土地承包经营权宗地(林地)" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="F" DictionaryName="土地承包经营权宗地(草地)" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="H" DictionaryName="海域使用权宗海" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="G" DictionaryName="无居民海岛使用权" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="W" DictionaryName="使用权未确定或有争议的土地或海域海岛" />
+    <DictionaryItem DictionaryType="宗地(宗海)特征码" DictionaryCodeNo="Y" DictionaryName="其它使用权土地、海域、海岛" />
+    <DictionaryItem DictionaryType="面积单位" DictionaryCodeNo="1" DictionaryName="平方米" />
+    <DictionaryItem DictionaryType="面积单位" DictionaryCodeNo="2" DictionaryName="亩" />
+    <DictionaryItem DictionaryType="面积单位" DictionaryCodeNo="3" DictionaryName="公顷" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+    <DictionaryItem DictionaryType="" DictionaryCodeNo="" DictionaryName="" />
+  </SystemDictionary>
+</SystemConfig>
