@@ -117,7 +117,6 @@
     <Compile Include="SubmitModel\QLT_FW_FDCQ_YZ.cs" />
     <Compile Include="SubmitModel\QLT_QL_GJZWSYQ.cs" />
     <Compile Include="SubmitModel\RNANDCN.cs" />
-    <Compile Include="SubmitModel\test.cs" />
     <Compile Include="SubmitModel\ZD_K_103.cs" />
     <Compile Include="SubmitModel\ZH_K_105.cs" />
     <Compile Include="SubmitModel\ZTT_GY_QLR.cs" />

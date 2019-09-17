@@ -62,7 +62,7 @@
     <Table  TableName="ZTT_GY_QLR" TableAliasName="权利人" IsMust="true"/>
     <Table  TableName="KTT_FW_ZRZ" TableAliasName="自然幢" IsMust="false"/>
     <Table  TableName="KTT_FW_C" TableAliasName="层" IsMust="false"/>
-    <Table  TableName="KTT_FW_H" TableAliasName="户" IsMust="false"/>
+    <Table  TableName="KTT_FW_H" TableAliasName="户" IsMust="true"/>
     <Table  TableName="ZD_K_103" TableAliasName="宗地空间属性" IsMust="true"/>
     <Table  TableName="QLT_FW_FDCQ_YZ" TableAliasName="房地产权_独幢、层、套、间房屋信息" IsMust="true"/>
     <Table  TableName="DJT_DJ_SLSQ" TableAliasName="登记受理申请信息" IsMust="true"/>
@@ -211,7 +211,7 @@
     <Table  TableName="ZTT_GY_QLR" TableAliasName="权利人" IsMust="true"/>
     <Table  TableName="KTT_FW_ZRZ" TableAliasName="自然幢" IsMust="false"/>
     <Table  TableName="KTT_FW_C" TableAliasName="层" IsMust="false"/>
-    <Table  TableName="KTT_FW_H" TableAliasName="户" IsMust="false"/> 
+    <Table  TableName="KTT_FW_H" TableAliasName="户" IsMust="true"/>
     <Table  TableName="QLT_FW_FDCQ_YZ" TableAliasName="房地产权_独幢、层、套、间房屋信息" IsMust="true"/>
     <Table  TableName="DJT_DJ_SLSQ" TableAliasName="登记受理申请信息" IsMust="true"/>
     <Table  TableName="DJF_DJ_SQR" TableAliasName="申请人属性信息" IsMust="true"/>
@@ -366,7 +366,7 @@
     <Table  TableName="KTT_FW_ZRZ" TableAliasName="自然幢" IsMust="false"/>
 
     <Table  TableName="KTT_FW_C" TableAliasName="层" IsMust="false"/>
-    <Table  TableName="KTT_FW_H" TableAliasName="户" IsMust="false"/>
+    <Table  TableName="KTT_FW_H" TableAliasName="户" IsMust="true"/>
     <Table  TableName="QLT_FW_FDCQ_YZ" TableAliasName="房地产权_独幢、层、套、间房屋信息" IsMust="true"/>
     <Table  TableName="DJT_DJ_SLSQ" TableAliasName="登记受理申请信息" IsMust="true"/>
     <Table  TableName="DJF_DJ_SQR" TableAliasName="申请人属性信息" IsMust="true"/>
@@ -532,7 +532,7 @@
     <Table  TableName="KTT_FW_ZRZ" TableAliasName="自然幢" IsMust="false"/>
 
     <Table  TableName="KTT_FW_C" TableAliasName="层" IsMust="false"/>
-    <Table  TableName="KTT_FW_H" TableAliasName="户" IsMust="false"/>
+    <Table  TableName="KTT_FW_H" TableAliasName="户" IsMust="true"/>
     <Table  TableName="QLT_FW_FDCQ_YZ" TableAliasName="房地产权_独幢、层、套、间房屋信息" IsMust="true"/>
     <Table  TableName="DJT_DJ_SLSQ" TableAliasName="登记受理申请信息" IsMust="true"/>
     <Table  TableName="DJF_DJ_SQR" TableAliasName="申请人属性信息" IsMust="true"/>

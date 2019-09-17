@@ -230,67 +230,80 @@ namespace BDCSubmit.Business.BLL.QX
             List<dynamic> lst = db.Query<dynamic>(sql).ToList();
             List<dynamic> newList = new List<dynamic>();
 
-            foreach (var item in lst)
+            try
             {
-                entity = pAssembly.CreateInstance("BDCSubmit.Business.SubmitModel." + tableName);
-                if (entity == null) return null;
-                PropertyInfo[] fields = entity.GetType().GetProperties();//获取指定对象的所有公共属性
-                List<object> vs = new List<object>();
-                var values = item.Values;
-                //var keys = item.Keys;
-
-                //foreach (var val in keys)
-                //{
-                //    ks.Add(val);
-                //}
-                foreach (var val in values)
+                foreach (var item in lst)
                 {
-                    vs.Add(val);
-                }
+                    entity = pAssembly.CreateInstance("BDCSubmit.Business.SubmitModel." + tableName);
+                    if (entity == null) return null;
+                    PropertyInfo[] fields = entity.GetType().GetProperties();//获取指定对象的所有公共属性
+                    List<object> vs = new List<object>();
+                    var values = item.Values;
+                    //var keys = item.Keys;
 
-                for (int i = 0; i < vs.Count; i++)
-                {
-
-                    //entity = vs[i];
-                    object result = null;
-                    if (vs[i] != null)
+                    //foreach (var val in keys)
+                    //{
+                    //    ks.Add(val);
+                    //}
+                    foreach (var val in values)
                     {
-                        if (fields[i].PropertyType.FullName == "System.Int16")
+                        vs.Add(val);
+                    }
+
+                    for (int i = 0; i < vs.Count; i++)
+                    {
+
+                        //entity = vs[i];
+                        object result = null;
+                        if (vs[i] != null)
                         {
-                            result = Convert.ToDecimal(vs[i]);
+                            if (fields[i].PropertyType.FullName == "System.Int16")
+                            {
+                                result = Convert.ToDecimal(vs[i]);
+                            }
+                            else if (fields[i].PropertyType.FullName == "System.Double")
+                            {
+                                result = Convert.ToDecimal(vs[i]);
+                            }
+                            else if (fields[i].PropertyType.FullName == "System.Byte")
+                            {
+                                result = Convert.ToByte(vs[i]);
+                            }
+                            else if (fields[i].PropertyType.FullName == "System.Decimal")
+                            {
+                                result = Convert.ToDecimal(vs[i]);
+                            }
+                            else if (fields[i].PropertyType.FullName == "System.Int32")
+                            {
+                                result = Convert.ToInt32(vs[i]);
+                            }
+                            else
+                            {
+                                result = vs[i];
+                            }
                         }
-                        else if (fields[i].PropertyType.FullName == "System.Double")
-                        {
-                            result = Convert.ToDecimal(vs[i]);
-                        }
-                        else if (fields[i].PropertyType.FullName == "System.Byte")
-                        {
-                            result = Convert.ToByte(vs[i]);
-                        }
-                        else if (fields[i].PropertyType.FullName == "System.Decimal")
-                        {
-                            result = Convert.ToDecimal(vs[i]);
-                        }
-                        else
-                        {
-                            result = vs[i];
-                        }
+
+
+
+                        fields[i].SetValue(entity, result); // 给属性赋值
                     }
 
 
 
-                    fields[i].SetValue(entity, result); // 给属性赋值
+                    newList.Add(entity);
+
+
+
+
                 }
-
-
-
-                newList.Add(entity);
-
-
-
+                return newList;
 
             }
-            return newList;
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
         //public BizMode GetSJInstanceExtra(string tableName, RNANDCN rc)
         //{

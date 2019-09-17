@@ -21,7 +21,7 @@
       <!--区县在市局机器报文配置-->
       <!--区县名称、区县代码、上报报文生成路径、响应报文存放路径(设成GetRepMsg)、前置机上报报文存放路径、前置机响应报文存放路径-->
       <City CityName="庆云县" CityCode="371423" BizMsgPath="H:/dzxml/371423/BizMsg" RepMsgPath="H:/dzxml/371423/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371423/BizMsg" LinuxRepMsgPath="/biz/371423/RepMsg" />
-      <City CityName="齐河县" CityCode="371425" BizMsgPath="H:/dzxml/371425/BizMsg" RepMsgPath="H:/dzxml/371425/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371425/BizMsg" LinuxRepMsgPath="/biz/371425/RepMsg" />
+      <City CityName="齐河县" CityCode="371425" BizMsgPath="D:/dzxml/371425/BizMsg" RepMsgPath="D:/dzxml/371425/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371425/BizMsg" LinuxRepMsgPath="/biz/371425/RepMsg" />
       <City CityName="平原县" CityCode="371426" BizMsgPath="H:/dzxml/371426/BizMsg" RepMsgPath="H:/dzxml/371426/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371426/BizMsg" LinuxRepMsgPath="/biz/371426/RepMsg" />
       <City CityName="夏津县" CityCode="371427" BizMsgPath="H:/dzxml/371427/BizMsg" RepMsgPath="H:/dzxml/371427/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371427/BizMsg" LinuxRepMsgPath="/biz/371427/RepMsg" />
     </Citys>

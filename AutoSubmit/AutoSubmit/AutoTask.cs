@@ -82,7 +82,7 @@ namespace AutoSubmit
                     if (qx == QXType.None)
                         continue;
                     backgroundWorker1.ReportProgress(0, " 执行:" + item.CityName + " 任务。" + DateTime.Now.ToString());
-
+                    //if (qx.ToString() == "QY" || qx.ToString() == "XJ" || qx.ToString() == "PY") continue;
                     //1,数据检查
                     try
                     {

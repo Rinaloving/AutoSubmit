@@ -1,0 +1,18 @@
+2019年9月17日 17:38:14
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-12154: TNS: 无法解析指定的连接标识符 ---> OracleInternal.Network.NetworkException (0x00002F7A): ORA-12154: TNS: 无法解析指定的连接标识符
+   在 OracleInternal.Network.AddressResolution..ctor(String TNSAlias, SqlNetOraConfig SNOConfig, Hashtable ObTnsHT, String instanceName, ConnectionOption CO)
+   在 OracleInternal.Network.OracleCommunication.Resolve(String tnsAlias, ConnectionOption& CO)
+   在 OracleInternal.ConnectionPool.PoolManager`3.ResolveTnsAlias(ConnectionString cs, Object OC)
+   在 OracleInternal.ServiceObjects.OracleConnectionImpl.Connect(ConnectionString cs, Boolean bOpenEndUserSession, OracleConnection connRefForCriteria, String instanceName)
+   在 BDCSubmit.Business.BLL.QX.CheckDataHandler.CheckTables(QXType qx, ExcuteTaskType et) 位置 E:\cfl\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\CheckDataHandler.cs:行号 181
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 E:\cfl\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 91
+------------------------------------
+2019年9月17日 17:38:17
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-12154: TNS: 无法解析指定的连接标识符 ---> OracleInternal.Network.NetworkException (0x00002F7A): ORA-12154: TNS: 无法解析指定的连接标识符
+   在 OracleInternal.Network.AddressResolution..ctor(String TNSAlias, SqlNetOraConfig SNOConfig, Hashtable ObTnsHT, String instanceName, ConnectionOption CO)
+   在 OracleInternal.Network.OracleCommunication.Resolve(String tnsAlias, ConnectionOption& CO)
+   在 OracleInternal.ConnectionPool.PoolManager`3.ResolveTnsAlias(ConnectionString cs, Object OC)
+   在 OracleInternal.ServiceObjects.OracleConnectionImpl.Connect(ConnectionString cs, Boolean bOpenEndUserSession, OracleConnection connRefForCriteria, String instanceName)
+   在 BDCSubmit.Business.BLL.QX.DataExchangeHandler.DataExchange(QXType qx, ExcuteTaskType et) 位置 E:\cfl\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataExchangeHandler.cs:行号 246
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 E:\cfl\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 103
+------------------------------------

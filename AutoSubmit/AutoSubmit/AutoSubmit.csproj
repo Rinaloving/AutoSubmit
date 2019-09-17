@@ -133,12 +133,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BDCSubmit.Business\BDCSubmit.Business.csproj">
-      <Project>{9993f59d-8390-46f7-9440-1ecd277eaaef}</Project>
-      <Name>BDCSubmit.Business</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Generate_tables_128px_1186297_easyicon.net.ico" />
     <Content Include="lib\bdc-rsa.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -153,6 +147,12 @@
     <Content Include="lib\Oracle.DataAccess.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BDCSubmit.Business\BDCSubmit.Business.csproj">
+      <Project>{9993f59d-8390-46f7-9440-1ecd277eaaef}</Project>
+      <Name>BDCSubmit.Business</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

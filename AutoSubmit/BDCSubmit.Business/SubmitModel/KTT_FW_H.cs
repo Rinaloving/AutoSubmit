@@ -11,7 +11,7 @@ namespace BDCSubmit.Business.SubmitModel
     [PrimaryKey("PID")]
     public class KTT_FW_H
     {
-        public string PID { get; set; }
+        
         [Column("BDCDYH")]
         public string BDCDYH { get; set; }
         [Column("FWBM")]
@@ -84,6 +84,8 @@ namespace BDCSubmit.Business.SubmitModel
         public string ZT { get; set; }
         [Column("QXDM")]
         public string QXDM { get; set; }
+        [Column("PID")]
+        public string PID { get; set; }
         [Column("CREATETIME")]
         public DateTime CREATETIME { get; set; }
         [Column("CPID")]

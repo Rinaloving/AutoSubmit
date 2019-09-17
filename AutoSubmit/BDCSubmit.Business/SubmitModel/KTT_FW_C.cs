@@ -11,7 +11,7 @@ namespace BDCSubmit.Business.SubmitModel
     [PrimaryKey("PID")]
     public class KTT_FW_C
     {
-        public string PID { get; set; }
+       
         [Column("CH")]
         public string CH { get; set; }
         [Column("ZRZH")]
@@ -40,6 +40,8 @@ namespace BDCSubmit.Business.SubmitModel
         public decimal SPTYMJ { get; set; }
         [Column("QXDM")]
         public string QXDM { get; set; }
+        [Column("PID")]
+        public string PID { get; set; }
         [Column("CREATETIME")]
         public DateTime CREATETIME { get; set; }
         [Column("ZRZPID")]
