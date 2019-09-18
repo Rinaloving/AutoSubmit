@@ -1053,7 +1053,7 @@ namespace BDCSubmit.Business.CommonClass
                     continue;
                 object obj = item.GetValue(t, null);
 
-                if (!string.IsNullOrEmpty(obj.toStringEX()))
+                if (!string.IsNullOrEmpty(obj.toStringEX())) // 等于空也添加 string.IsNullOrEmpty(obj.toStringEX())
                 {
                     if ("System.DateTime".Equals(item.PropertyType.ToString()))
                     {
@@ -1071,6 +1071,14 @@ namespace BDCSubmit.Business.CommonClass
                             XAttribute att = new XAttribute("QLRFRDH", obj);
                             element.Add(att);
                         }
+                        else if (t is KTT_FW_H && "FWFHT" == item.Name)
+                        {
+                            XAttribute att = new XAttribute("FCFHT", obj); // 校验规则里面是这个字段
+                            element.Add(att);
+                        }else if (t is KTT_FW_H && "CPID" == item.Name)
+                        {
+                            // 不加这个属性
+                        }
                         else
                         {
                             XAttribute att = new XAttribute(item.Name, obj);
@@ -1078,6 +1086,40 @@ namespace BDCSubmit.Business.CommonClass
                         }
                     }
                 }
+                else
+                {
+                    if (t is QLF_QL_DYAQ)
+                    {
+                        if ("ZXDYYY" == item.Name|| "ZJJZWZL"==item.Name|| "ZJJZWDYFW"==item.Name|| "ZGZQQDSS"==item.Name|| "ZWLXQSSJ"== item.Name
+                            || "ZWLXJSSJ"==item.Name)
+                        {
+                            XAttribute att = new XAttribute(item.Name, ""); 
+                            element.Add(att);
+                        }
+                        else if ("ZXSJ" == item.Name)
+                        {
+                            XAttribute att = new XAttribute(item.Name, Convert.ToDateTime("0001-01-01T00:00:00"));
+                            element.Add(att);
+                        }
+
+                    }
+                    else if (t is QLF_QL_YGDJ)
+                    {
+                        if ("YWRZJZL"==item.Name|| "FWXZ"==item.Name)
+                        {
+                            XAttribute att = new XAttribute(item.Name, "");
+                            element.Add(att);
+                        }
+                        else if ("DJSJ" == item.Name)
+                        {
+                            XAttribute att = new XAttribute(item.Name, Convert.ToDateTime("0001-01-01T00:00:00"));
+                            element.Add(att);
+                            
+                        }
+                    }
+                    
+                }
+     
 
             }
 

@@ -4,6 +4,7 @@ using BDCSubmit.Business.BLL.QX;
 using BDCSubmit.Business.BLL.SJ;
 using BDCSubmit.Business.CommonClass;
 using CCWin;
+using NPoco;
 using Quartz;
 using Quartz.Impl;
 using System;
@@ -86,6 +87,7 @@ namespace AutoSubmit
                     //1,数据检查
                     try
                     {
+
 
                         backgroundWorker1.ReportProgress(0, "   执行数据检查");
                         CheckDataHandler.Instance.CheckTables(qx, ExcuteTaskType.Hide);

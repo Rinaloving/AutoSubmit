@@ -68,7 +68,6 @@
     <Compile Include="BLL\QX\DataSubmitHandler.cs" />
     <Compile Include="BLL\SJ\BIZMSGIDMANAGERHandler.cs" />
     <Compile Include="BLL\SJ\ResponseHandler.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="CommonClass\CheckBusinessTables.cs" />
     <Compile Include="CommonClass\City.cs" />
     <Compile Include="CommonClass\JobClass.cs" />

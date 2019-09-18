@@ -16,3 +16,8 @@ Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-12154: TNS: �
    在 BDCSubmit.Business.BLL.QX.DataExchangeHandler.DataExchange(QXType qx, ExcuteTaskType et) 位置 E:\cfl\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataExchangeHandler.cs:行号 246
    在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 E:\cfl\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 103
 ------------------------------------
+2019年9月17日 22:18:21
+System.IO.DirectoryNotFoundException: 未能找到路径“D:\dzxml\371425\RepMsg\GetRepMsg”的一部分。
+   在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 127
+------------------------------------

@@ -197,9 +197,10 @@ namespace BDCSubmit.Business.BLL.QX
             sql = GetQuerySQL(tableName, rc, QueryType.count);
             if (sql == "")
                 return count;
-            var result = db.ExecuteAsync(sql);
+            //var result = db.ExecuteAsync(sql);
+            dynamic result = db.Fetch<dynamic>(sql);
             //int.TryParse(baseHelper.ExecuteScalar(provider, sql).toStringEX(), out count);
-            int.TryParse(result.Id.ToString(), out count);
+            int.TryParse(result.Count.ToString(), out count);
             return count;
         }
         /// <summary>
@@ -224,11 +225,11 @@ namespace BDCSubmit.Business.BLL.QX
         public string GetQuerySQL(string tableName, RNANDCN rc, QueryType qt)
         {
             string sql = "";
-            string qry = " count(*) ";
+            string qry = "PID";
             switch (qt)
             {
                 case QueryType.count:
-                    qry = " count(*) ";
+                    qry = "PID";
                     break;
                 case QueryType.all:
                     qry = " * ";
