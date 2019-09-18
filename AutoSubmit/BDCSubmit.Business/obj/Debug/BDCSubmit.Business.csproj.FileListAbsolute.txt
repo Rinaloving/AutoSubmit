@@ -71,8 +71,14 @@ D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Oracle.Managed
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Quartz.dll
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Quartz.pdb
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Quartz.xml
-D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Business.csprojAssemblyReference.cache
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Business.csproj.CoreCompileInputs.cache
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Business.csproj.CopyComplete
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Business.dll
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Business.pdb
+D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Business.csprojAssemblyReference.cache
+D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.Core.dll
+D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.dll
+D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.pdb
+D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.xml
+D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.Core.pdb
+D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.Core.xml

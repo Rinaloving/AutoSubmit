@@ -26,8 +26,8 @@
       <City CityName="夏津县" CityCode="371427" BizMsgPath="H:/dzxml/371427/BizMsg" RepMsgPath="H:/dzxml/371427/RepMsg/GetRepMsg" LinuxBizMsgPath="/biz/371427/BizMsg" LinuxRepMsgPath="/biz/371427/RepMsg" />
     </Citys>
     <!--自动执行的时间间隔，单位：分钟。只允许填写整数数字，最小填1，最大35000-->
-    <Interval>60</Interval>
-    <LogInterval>0 0 20 * * ?</LogInterval>
+    <Interval>1</Interval>
+    <LogInterval>0 0 01 * * ?</LogInterval>
   </GeneralConfig>
   <!--连接设置-->
   <ConnectionConfig>

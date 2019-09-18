@@ -80,7 +80,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(4, 28);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.menuStrip1.Size = new System.Drawing.Size(722, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(722, 25);
             this.menuStrip1.SkinAllColor = true;
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
@@ -93,7 +93,7 @@
             // 
             this.tmiStart.Image = ((System.Drawing.Image)(resources.GetObject("tmiStart.Image")));
             this.tmiStart.Name = "tmiStart";
-            this.tmiStart.Size = new System.Drawing.Size(57, 20);
+            this.tmiStart.Size = new System.Drawing.Size(60, 21);
             this.tmiStart.Text = "启动";
             this.tmiStart.Click += new System.EventHandler(this.tmiStart_Click);
             // 
@@ -101,7 +101,7 @@
             // 
             this.tmiStop.Image = ((System.Drawing.Image)(resources.GetObject("tmiStop.Image")));
             this.tmiStop.Name = "tmiStop";
-            this.tmiStop.Size = new System.Drawing.Size(57, 20);
+            this.tmiStop.Size = new System.Drawing.Size(60, 21);
             this.tmiStop.Text = "停止";
             this.tmiStop.Click += new System.EventHandler(this.tmiStop_Click);
             // 
@@ -109,7 +109,7 @@
             // 
             this.tmiClose.Image = ((System.Drawing.Image)(resources.GetObject("tmiClose.Image")));
             this.tmiClose.Name = "tmiClose";
-            this.tmiClose.Size = new System.Drawing.Size(57, 20);
+            this.tmiClose.Size = new System.Drawing.Size(60, 21);
             this.tmiClose.Text = "退出";
             this.tmiClose.Click += new System.EventHandler(this.tmiClose_Click);
             // 

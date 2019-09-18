@@ -1090,13 +1090,13 @@ namespace BDCSubmit.Business.CommonClass
                 {
                     if (t is QLF_QL_DYAQ)
                     {
-                        if ("ZXDYYY" == item.Name|| "ZJJZWZL"==item.Name|| "ZJJZWDYFW"==item.Name|| "ZGZQQDSS"==item.Name|| "ZWLXQSSJ"== item.Name
-                            || "ZWLXJSSJ"==item.Name)
+                        if ("ZXDYYY" == item.Name|| "ZJJZWZL"==item.Name|| "ZJJZWDYFW"==item.Name|| "ZGZQQDSS"==item.Name
+                            )
                         {
                             XAttribute att = new XAttribute(item.Name, ""); 
                             element.Add(att);
                         }
-                        else if ("ZXSJ" == item.Name)
+                        else if ("ZXSJ" == item.Name || "ZWLXJSSJ" == item.Name || "ZWLXQSSJ" == item.Name)
                         {
                             XAttribute att = new XAttribute(item.Name, Convert.ToDateTime("0001-01-01T00:00:00"));
                             element.Add(att);

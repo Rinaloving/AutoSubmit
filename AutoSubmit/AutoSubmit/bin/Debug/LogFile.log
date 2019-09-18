@@ -21,3 +21,133 @@ System.IO.DirectoryNotFoundException: 未能找到路径“D:\dzxml\371425\RepMs
    在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
    在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 127
 ------------------------------------
+2019年9月18日 17:32:16
+System.InvalidOperationException: Can't find a connection string with the name 'qysubmit'
+   在 BDCSubmit.Business.BLL.QX.CheckDataHandler.CheckTables(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\CheckDataHandler.cs:行号 181
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 93
+------------------------------------
+2019年9月18日 17:32:17
+System.InvalidOperationException: Can't find a connection string with the name 'qysubmit'
+   在 BDCSubmit.Business.BLL.QX.DataExchangeHandler.DataExchange(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataExchangeHandler.cs:行号 246
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 105
+------------------------------------
+2019年9月18日 17:32:18
+System.InvalidOperationException: Can't find a connection string with the name 'qysubmit'
+   在 BDCSubmit.Business.BLL.QX.DataSubmitHandler.DataSubmit(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataSubmitHandler.cs:行号 213
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 118
+------------------------------------
+2019年9月18日 17:32:20
+System.IO.DirectoryNotFoundException: 未能找到路径“H:\dzxml\371423\RepMsg\GetRepMsg”的一部分。
+   在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 129
+------------------------------------
+2019年9月18日 17:32:24
+System.IO.DirectoryNotFoundException: 未能找到路径“D:\dzxml\371425\RepMsg\GetRepMsg”的一部分。
+   在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 129
+------------------------------------
+2019年9月18日 17:32:25
+System.InvalidOperationException: Can't find a connection string with the name 'pysubmit'
+   在 BDCSubmit.Business.BLL.QX.CheckDataHandler.CheckTables(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\CheckDataHandler.cs:行号 181
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 93
+------------------------------------
+2019年9月18日 17:32:26
+System.InvalidOperationException: Can't find a connection string with the name 'pysubmit'
+   在 BDCSubmit.Business.BLL.QX.DataExchangeHandler.DataExchange(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataExchangeHandler.cs:行号 246
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 105
+------------------------------------
+2019年9月18日 17:32:26
+System.InvalidOperationException: Can't find a connection string with the name 'pysubmit'
+   在 BDCSubmit.Business.BLL.QX.DataSubmitHandler.DataSubmit(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataSubmitHandler.cs:行号 213
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 118
+------------------------------------
+2019年9月18日 17:32:26
+System.IO.DirectoryNotFoundException: 未能找到路径“H:\dzxml\371426\RepMsg\GetRepMsg”的一部分。
+   在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 129
+------------------------------------
+2019年9月18日 17:32:26
+System.InvalidOperationException: Can't find a connection string with the name 'xjsubmit'
+   在 BDCSubmit.Business.BLL.QX.CheckDataHandler.CheckTables(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\CheckDataHandler.cs:行号 181
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 93
+------------------------------------
+2019年9月18日 17:32:27
+System.InvalidOperationException: Can't find a connection string with the name 'xjsubmit'
+   在 BDCSubmit.Business.BLL.QX.DataExchangeHandler.DataExchange(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataExchangeHandler.cs:行号 246
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 105
+------------------------------------
+2019年9月18日 17:32:27
+System.InvalidOperationException: Can't find a connection string with the name 'xjsubmit'
+   在 BDCSubmit.Business.BLL.QX.DataSubmitHandler.DataSubmit(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataSubmitHandler.cs:行号 213
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 118
+------------------------------------
+2019年9月18日 17:32:27
+System.IO.DirectoryNotFoundException: 未能找到路径“H:\dzxml\371427\RepMsg\GetRepMsg”的一部分。
+   在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 129
+------------------------------------
+2019年9月18日 18:03:45
+System.InvalidOperationException: Can't find a connection string with the name 'qysubmit'
+   在 BDCSubmit.Business.BLL.QX.CheckDataHandler.CheckTables(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\CheckDataHandler.cs:行号 181
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 93
+------------------------------------
+2019年9月18日 18:03:46
+System.InvalidOperationException: Can't find a connection string with the name 'qysubmit'
+   在 BDCSubmit.Business.BLL.QX.DataExchangeHandler.DataExchange(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataExchangeHandler.cs:行号 246
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 105
+------------------------------------
+2019年9月18日 18:03:47
+System.InvalidOperationException: Can't find a connection string with the name 'qysubmit'
+   在 BDCSubmit.Business.BLL.QX.DataSubmitHandler.DataSubmit(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataSubmitHandler.cs:行号 213
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 118
+------------------------------------
+2019年9月18日 18:03:50
+System.IO.DirectoryNotFoundException: 未能找到路径“H:\dzxml\371423\RepMsg\GetRepMsg”的一部分。
+   在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 129
+------------------------------------
+2019年9月18日 18:03:55
+System.IO.DirectoryNotFoundException: 未能找到路径“D:\dzxml\371425\RepMsg\GetRepMsg”的一部分。
+   在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 129
+------------------------------------
+2019年9月18日 18:03:56
+System.InvalidOperationException: Can't find a connection string with the name 'pysubmit'
+   在 BDCSubmit.Business.BLL.QX.CheckDataHandler.CheckTables(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\CheckDataHandler.cs:行号 181
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 93
+------------------------------------
+2019年9月18日 18:03:57
+System.InvalidOperationException: Can't find a connection string with the name 'pysubmit'
+   在 BDCSubmit.Business.BLL.QX.DataExchangeHandler.DataExchange(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataExchangeHandler.cs:行号 246
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 105
+------------------------------------
+2019年9月18日 18:03:58
+System.InvalidOperationException: Can't find a connection string with the name 'pysubmit'
+   在 BDCSubmit.Business.BLL.QX.DataSubmitHandler.DataSubmit(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataSubmitHandler.cs:行号 213
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 118
+------------------------------------
+2019年9月18日 18:03:59
+System.IO.DirectoryNotFoundException: 未能找到路径“H:\dzxml\371426\RepMsg\GetRepMsg”的一部分。
+   在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 129
+------------------------------------
+2019年9月18日 18:04:00
+System.InvalidOperationException: Can't find a connection string with the name 'xjsubmit'
+   在 BDCSubmit.Business.BLL.QX.CheckDataHandler.CheckTables(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\CheckDataHandler.cs:行号 181
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 93
+------------------------------------
+2019年9月18日 18:04:00
+System.InvalidOperationException: Can't find a connection string with the name 'xjsubmit'
+   在 BDCSubmit.Business.BLL.QX.DataExchangeHandler.DataExchange(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataExchangeHandler.cs:行号 246
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 105
+------------------------------------
+2019年9月18日 18:04:00
+System.InvalidOperationException: Can't find a connection string with the name 'xjsubmit'
+   在 BDCSubmit.Business.BLL.QX.DataSubmitHandler.DataSubmit(QXType qx, ExcuteTaskType et) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\QX\DataSubmitHandler.cs:行号 213
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 118
+------------------------------------
+2019年9月18日 18:04:01
+System.IO.DirectoryNotFoundException: 未能找到路径“H:\dzxml\371427\RepMsg\GetRepMsg”的一部分。
+   在 BDCSubmit.Business.BLL.SJ.ResponseHandler.GetResponseFiles(QXType qx) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\BLL\SJ\ResponseHandler.cs:行号 299
+   在 AutoSubmit.AutoTask.backgroundWorker1_DoWork(Object sender, DoWorkEventArgs e) 位置 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\AutoTask.cs:行号 129
+------------------------------------

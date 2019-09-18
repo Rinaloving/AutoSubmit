@@ -78,9 +78,9 @@ namespace BDCSubmit.Business.CommonClass
             }
         }
 
-        Task IJob.Execute(IJobExecutionContext context)
-        {
-            throw new NotImplementedException();
-        }
+        //Task IJob.Execute(IJobExecutionContext context)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
