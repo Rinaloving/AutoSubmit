@@ -76,9 +76,3 @@ D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Busi
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Business.dll
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Business.pdb
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\obj\Debug\BDCSubmit.Business.csprojAssemblyReference.cache
-D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.Core.dll
-D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.dll
-D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.pdb
-D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.xml
-D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.Core.pdb
-D:\MyGithubWeb\AutoSubmit\AutoSubmit\BDCSubmit.Business\bin\Debug\Common.Logging.Core.xml

@@ -123,8 +123,6 @@ D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\bin\Debug\AutoSubmit.exe.config
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\bin\Debug\AutoSubmit.exe
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\bin\Debug\AutoSubmit.pdb
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\bin\Debug\BDCSubmit.Business.dll
-D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\bin\Debug\Common.Logging.Core.dll
-D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\bin\Debug\Common.Logging.dll
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\bin\Debug\CSkin.dll
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\bin\Debug\NPoco.dll
 D:\MyGithubWeb\AutoSubmit\AutoSubmit\AutoSubmit\bin\Debug\Oracle.DataAccess.dll

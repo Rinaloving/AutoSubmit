@@ -9,6 +9,7 @@ using Quartz;
 using Quartz.Impl;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -215,19 +216,31 @@ namespace AutoSubmit
         /// 任务是否暂停
         /// </summary>
         bool IsPauseAll = false;
-        private void tmiStart_Click(object sender, EventArgs e)
+        private async  void tmiStart_Click(object sender, EventArgs e)
         {
 
             this.IsRunning = true;
             RefreshRoles();
             //启动上报日志任务
+            await RunLogUp();
+            richTextBox1.AppendText("开启任务:" + DateTime.Now.ToString() + "\n");
+            timer1_Tick(null, null);
+
+        }
+
+        private async Task RunLogUp()
+        {
             try
             {
+                NameValueCollection props = new NameValueCollection
+                {
+                    {"quartz.serializer.type","binary" }
+                };
                 if (scheduler == null)
                 {
                     string strtime = SystemHandler.Instance.GetLogConfig();
-                    ISchedulerFactory schedulerFactory = new StdSchedulerFactory();
-                    scheduler = schedulerFactory.GetScheduler() as Quartz.IScheduler;
+                    StdSchedulerFactory factory = new StdSchedulerFactory(props);
+                    scheduler = await factory.GetScheduler();
 
                     IJobDetail job = null;
 
@@ -237,29 +250,26 @@ namespace AutoSubmit
 
                     if (strtime != null)
                     {
-                        ICronTrigger trigger = (ICronTrigger)TriggerBuilder.Create().WithCronSchedule(strtime).Build();
-                        scheduler.ScheduleJob(job, trigger);
-                        scheduler.Start();
+                        ITrigger trigger = TriggerBuilder.Create().WithIdentity("LogJobClassJob", "LogJobClassJobGroup").StartNow().WithCronSchedule(strtime).Build();
+                       await scheduler.ScheduleJob(job, trigger);
+                       await scheduler.Start();
                     }
                 }
                 else
                 {
                     if (IsPauseAll)
                     {
-                        scheduler.ResumeAll(); IsPauseAll = false;
+                       await scheduler.ResumeAll(); IsPauseAll = false;
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
-            richTextBox1.AppendText("开启任务:" + DateTime.Now.ToString() + "\n");
-            timer1_Tick(null, null);
-
         }
 
-        private void tmiStop_Click(object sender, EventArgs e)
+        private async void tmiStop_Click(object sender, EventArgs e)
         {
             this.IsRunning = false;
             RefreshRoles();
@@ -270,7 +280,7 @@ namespace AutoSubmit
                 //暂停 上报日志任务
                 if (scheduler != null)
                 {
-                    scheduler.PauseAll();
+                    await scheduler.PauseAll();
                     IsPauseAll = true;
                 }
             }
@@ -280,9 +290,9 @@ namespace AutoSubmit
             }
         }
 
-        private void AutoTask_Shown(object sender, EventArgs e)
+        private  void AutoTask_Shown(object sender, EventArgs e)
         {
-            this.tmiStart.PerformClick();
+              this.tmiStart.PerformClick();
         }
 
 

@@ -15,25 +15,32 @@ namespace BDCSubmit.Business.CommonClass
         /// 同步4县日志数据
         /// </summary>
         /// <param name="context"></param>
-        public void Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
             try
             {
-                List<City> lstCity = SystemHandler.Instance.GetConnectionCitys();
-                foreach (var item in lstCity)
-                {
-                    ExchangeAccesslog(item);
-                }
+              await RunExchangeAccesslog();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
             }
         }
+
+        public async Task RunExchangeAccesslog()
+        {
+            List<City> lstCity = SystemHandler.Instance.GetConnectionCitys();
+            foreach (var item in lstCity)
+            {
+                await ExchangeAccesslog(item);
+            }
+        }
+
         IDatabase db = null;
         IDatabase sjdb = null;
-        private void ExchangeAccesslog(City city)
+        private async Task ExchangeAccesslog(City city)
         {
+            await Task.Delay(TimeSpan.FromSeconds(10));
             string citycode = city.CityCode;
             try
             {
@@ -78,9 +85,6 @@ namespace BDCSubmit.Business.CommonClass
             }
         }
 
-        //Task IJob.Execute(IJobExecutionContext context)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        
     }
 }

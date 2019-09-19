@@ -15346,65 +15346,6 @@
         <member name="M:Quartz.Simpl.RAMJobStore.GetPausedTriggerGroups(System.Threading.CancellationToken)">
             <seealso cref="M:Quartz.Spi.IJobStore.GetPausedTriggerGroups(System.Threading.CancellationToken)" />
         </member>
-        <member name="T:Quartz.Simpl.RemotingSchedulerExporter">
-            <summary>
-            Scheduler exporter that exports scheduler to remoting context.
-            </summary>
-            <author>Marko Lahma</author>
-        </member>
-        <member name="F:Quartz.Simpl.RemotingSchedulerExporter.formatProviderAllowedProperties">
-            <summary>
-            BinaryServerFormatterSinkProvider allowed properties.
-            </summary>
-        </member>
-        <member name="M:Quartz.Simpl.RemotingSchedulerExporter.RegisterRemotingChannelIfNeeded">
-            <summary>
-            Registers remoting channel if needed. This is determined
-            by checking whether there is a positive value for port.
-            </summary>
-        </member>
-        <member name="M:Quartz.Simpl.RemotingSchedulerExporter.ExtractFormatProviderConfiguration(System.Collections.IDictionary)">
-            <summary>
-            Extract BinaryServerFormatterSinkProvider allowed properties from configuration properties.
-            </summary>
-            <param name="props">Configuration properties.</param>
-            <returns>BinaryServerFormatterSinkProvider allowed properties from configuration.</returns>
-        </member>
-        <member name="P:Quartz.Simpl.RemotingSchedulerExporter.Port">
-            <summary>
-            Gets or sets the port used for remoting.
-            </summary>
-        </member>
-        <member name="P:Quartz.Simpl.RemotingSchedulerExporter.BindName">
-            <summary>
-            Gets or sets the name to use when exporting
-            scheduler to remoting context.
-            </summary>
-        </member>
-        <member name="P:Quartz.Simpl.RemotingSchedulerExporter.ChannelName">
-            <summary>
-            Gets or sets the name to use when binding to
-            tcp channel.
-            </summary>
-        </member>
-        <member name="P:Quartz.Simpl.RemotingSchedulerExporter.ChannelType">
-            <summary>
-            Sets the channel type when registering remoting.
-            </summary>
-        </member>
-        <member name="P:Quartz.Simpl.RemotingSchedulerExporter.TypeFilterLevel">
-            <summary>
-            Sets the <see cref="P:Quartz.Simpl.RemotingSchedulerExporter.TypeFilterLevel" /> used when
-            exporting to remoting context. Defaults to
-            <see cref="F:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full" />.
-            </summary>
-        </member>
-        <member name="P:Quartz.Simpl.RemotingSchedulerExporter.RejectRemoteRequests">
-            <summary>
-            A Boolean value (true or false) that specifies whether to refuse requests from other computers.
-            Specifying true allows only remoting calls from the local computer. The default is false.
-            </summary>
-        </member>
         <member name="T:Quartz.Simpl.RemotingSchedulerProxyFactory">
             <summary>
             A <see cref="T:Quartz.Spi.IRemotableSchedulerProxyFactory" /> implementation that creates
